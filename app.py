@@ -42,6 +42,8 @@ external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
 
+server = app.server
+
 app.layout = html.Div(style={'backgroundColor': "#ffffff"}, children=[
     html.H1(children='nearoptimal.systems', style={"textAlign": "center"}),
 
@@ -61,4 +63,4 @@ app.layout = html.Div(style={'backgroundColor': "#ffffff"}, children=[
 ])
 
 if __name__ == '__main__':
-    server = app.run_server()
+    app.run_server()
