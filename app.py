@@ -61,4 +61,4 @@ app.layout = html.Div(style={'backgroundColor': "#ffffff"}, children=[
 ])
 
 if __name__ == '__main__':
-    app.run_server(debug=True)
+    server = app.run_server()
